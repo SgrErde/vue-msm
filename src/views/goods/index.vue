@@ -112,7 +112,7 @@ export default {
   data() {
     return {
       list: [],
-      total: 0, //总的数据
+      total: 0, //总数据
       currentPage: 1, //当前页码
       pageSize: 10, //一页显示数量
       searchMap: {
