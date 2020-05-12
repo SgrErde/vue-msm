@@ -5,6 +5,7 @@ import {
 } from 'element-ui'
 
 const BASE_URL = process.env.VUE_APP_BASE_API;
+console.log(BASE_URL)
 const request = axios.create({
     baseURL: BASE_URL,
     timeout: 5000 //响应超时时间，5000毫秒

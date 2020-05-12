@@ -38,12 +38,10 @@ export default {
           //用户名密码不为空
           login(this.form.username, this.form.password).then(response => {
             const res = response.data;
-            console.log("login参数", res);
             if (res.flag) {
               //用户名和密码验证成功
               getUserInfo(res.data.token).then(response => {
                 const resp = response.data;
-                console.log("getuserinfo", resp, "--", resp.data);
                 if (resp.flag) {
                   //获取用户信息成功
                   localStorage.setItem(
